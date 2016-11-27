@@ -1,0 +1,23 @@
+{
+  "name": "mainportfolio",
+  "version": "0.1.0",
+  "description": "The git repo for my public portfolio.  Welcome!  Feel free to reach out to me for any reason at UnbelieverJude@gmail.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarfoxMulder/mainportfolio.git"
+  },
+  "keywords": [
+    "Prestia",
+    "portfolio"
+  ],
+  "author": "Charles Jude Prestia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarfoxMulder/mainportfolio/issues"
+  },
+  "homepage": "https://github.com/StarfoxMulder/mainportfolio#readme"
+}
