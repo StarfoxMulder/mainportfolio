@@ -27,7 +27,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 // bring in the routes
-var routes = require('./controllers/ML_controller.js');
+var routes = require('./controllers/controller.js');
 
 // connect the routes
 app.use('/', routes);
