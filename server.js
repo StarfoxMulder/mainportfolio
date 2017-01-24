@@ -3,13 +3,13 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var logger = require("morgan");
-var mongoose = require("mongoose");
+// var mongoose = require("mongoose");
 var Router = express.Router();
 var routes = require("./controllers/controller.js");
 var request = require("request");
 var Promise = require("bluebird");
 
-mongoose.Promise = Promise;
+// mongoose.Promise = Promise;
 
 // Initialize Express
 var app = express();
