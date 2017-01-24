@@ -4,7 +4,7 @@ var router = express.Router();
 ///// Route to Landing Page \\\\\
 router.get('/', function (req, res) {
 
-   res.render('index', {icon: icon} );
+   res.render('index');
 });
 
 router.get('/about', function (req, res) {
