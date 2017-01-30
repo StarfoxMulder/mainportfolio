@@ -18,10 +18,6 @@ TO SEE Original CSS, view Homework2 -> Assignment 1 -> Style/Style2/Style3.css
 
 /*  GENERAL  */
 
-.container {
-	margin: 0 auto;
-}
-
 h1 {
 	font-size: 30px;
 	line-height: 49px;
@@ -35,12 +31,9 @@ h3 {
 
 /* GENERAL Header*/
 
-#masthead {
-	background: #fff;
-	z-index: 9;
+header {
+	background: #F6FFF6;
 	color: #fff;
-	overflow: auto;
-	position: fixed;
 	width: 100%;
 	padding: 0;
 }
@@ -52,16 +45,18 @@ h3 {
 	color: #fff;
 	line-height: 70px;
 	font-size: 35px;
-	font-weight: 500;
+	font-weight: 900;
 	letter-spacing: 2px;
 	text-decoration: none;
 	background: #456145;
 	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
 	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
-	margin-top: 25px;
+	padding: 1%;
 }
 nav a {
 	color: #999;
@@ -81,7 +76,7 @@ footer {
 	font-weight: 600;
 	background: #666;
 	color: #ccc;
-	padding: 15px 40px;
+	padding: 1% 5%;
 	clear: both;
 	border-top: 2px solid #5A947B;
 	font-size: 14px;
@@ -90,6 +85,8 @@ footer {
 	bottom: 0px;
 	margin: 0px;
 	width: 100%;
+}
+#goinToSpace {
 }
 
 /*  INDEX/Landing Page  */
@@ -112,11 +109,6 @@ footer {
 
 .main-section {
 	background: #fff;
-	padding: 30px;
-	margin: 0 0 40px 0;
-	width: 100%;
-	max-width: 650px;
-	float: left;
 	border: 1px solid #ddd;
 }
 
@@ -140,17 +132,17 @@ footer {
 
 /*sidebar*/
 
-.sidebar {
+#sidebar {
 	background: #fff;
-	padding: 30px;
+	/*padding: 30px;
 	width: 100%;
 	max-width: 270px;
-	float: right;
+	float: right;*/
 	border: 1px solid #ddd;
 	margin-bottom: 20px;
 }
 h3,
-.sidebar h2 {
+#sidebar h2 {
 	border-bottom: 2px solid #eee;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -174,10 +166,15 @@ ul, li, a, i::-moz-focus-inner {
     border: 0;
 }*/
 
+i[class^="fa"]:before {
+	display: inline-block;
+	text-decoration: none;
+}
+
 .socialIconLI {
 	text-decoration: none;
 	display: inline;
-	width: 68.56px;
+	width: 40px;
 	height: 40px;
 	color: #dddddd;
 }
@@ -272,7 +269,8 @@ input[type=submit] {
 	margin-right: 40px;
 }
 .work img {
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	border: 0 none;
 	opacity: .8;
 }
@@ -298,7 +296,7 @@ input[type=submit] {
 }
 
 /*---Media Queries--*/
-
+/*
 @media only screen and (max-width: 980px) {
 	.container {
 		padding: 0 20px;
@@ -373,3 +371,4 @@ input[type=submit] {
 		margin-left: 0;
 	}
 }
+*/

@@ -3,7 +3,6 @@ var router = express.Router();
 
 ///// Route to Landing Page \\\\\
 router.get('/', function (req, res) {
-
    res.render('index');
 });
 
