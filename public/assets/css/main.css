@@ -9,6 +9,10 @@ body {
 	padding: 0;
 	height: 100%;
 }
+main {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 
 /**********
 
@@ -18,47 +22,55 @@ TO SEE Original CSS, view Homework2 -> Assignment 1 -> Style/Style2/Style3.css
 
 /*  GENERAL  */
 
-h1 {
-	font-size: 30px;
-	line-height: 49px;
-	border-bottom: 3px solid #ddd;
-	padding-bottom: 20px;
-}
 h2,
 h3 {
+	font-family: 'Archivo Narrow', sans-serif;
 	font-size: 22px;
 }
 
-/* GENERAL Header*/
 
+
+/*/////  GENERAL Header & Footer  /////*/
 header {
-	background: #F6FFF6;
+	background: #F8FFFB;
 	color: #fff;
 	width: 100%;
 	padding: 0;
 }
-
+#nameDiv {
+	padding-left: 0;
+	text-align: center;
+}
 #name {
 	height: 70px;
 	font-family: 'Archivo Narrow', sans-serif;
 	text-align: center;
+	width: 100%;
 	color: #fff;
 	line-height: 70px;
 	font-size: 35px;
 	font-weight: 900;
 	letter-spacing: 2px;
 	text-decoration: none;
+	padding-left: 0;
 	background: #456145;
 	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
 	background-repeat: repeat-x, repeat;
 	  -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-nav {
+#sitePages {
 	padding: 1%;
+	width: 100%;
+	bottom: 1%;
+	text-align: justify;
 }
-nav a {
+#sitePages:after {
+	content: '';
+  display: inline-block;
+  width: 100%;
+}
+#sitePages li {
 	color: #999;
 	text-decoration: none;
 	margin-left: 15px;
@@ -67,10 +79,12 @@ nav a {
 	padding-left: 15px;
 	line-height: 18px;
 }
-nav a:first-child {
+#sitePages li:first-child {
 	border-left: 0 none;
 }
-
+li > a {
+	text-decoration: none;
+}
 footer {
 	font-family: 'Poiret One', cursive;
 	font-weight: 600;
@@ -83,13 +97,15 @@ footer {
 	text-align: right;
 	position: fixed;
 	bottom: 0px;
-	margin: 0px;
+	margin: 2% 0px 0px 0px;
 	width: 100%;
 }
 #goinToSpace {
 }
 
-/*  INDEX/Landing Page  */
+
+
+/*/////  INDEX/Landing Page  /////*/
 #nameIndexDiv {
 	margin: auto;
 	width: 100%;
@@ -104,12 +120,14 @@ footer {
 	color: #fff;
 }
 
-/*  HOME PAGE  */
 
 
+/*/////  HOME PAGE  /////*/
 .main-section {
-	background: #fff;
+	background: #F8FFFB;
 	border: 1px solid #ddd;
+	margin-bottom: 4%;
+	padding-bottom: 15px;
 }
 
 #myPic {
@@ -130,59 +148,62 @@ footer {
 	margin-bottom: 15px;
 }
 
-/*sidebar*/
 
+
+/*/////  sidebar  /////*/
 #sidebar {
-	background: #fff;
-	/*padding: 30px;
-	width: 100%;
-	max-width: 270px;
-	float: right;*/
+	background-color: #F8FFFB;
 	border: 1px solid #ddd;
-	margin-bottom: 20px;
 }
-h3,
 #sidebar h2 {
 	border-bottom: 2px solid #eee;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
 	line-height: 22px;
-}
-#socialImages {
+	border-bottom: 0;
+	text-align: center;
+	width: 100%;
+	line-height: 40px;
+	font-weight: 900;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #F8FFFB;
+	font-size: 26px;
+	letter-spacing: 2px;
 	text-decoration: none;
-	position: relative;
+	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#connect {
+	height: auto;
+}
+#SocialImages {
+	text-decoration: none;
 	color: #dddddd;
+	height: auto;
+	text-align: justify;
 }
-
-/* Discovered through DevTools that this was adding padding from
-   'user agent stylesheet' (although this works for Chrome, the
-   the 'moz-focus-inner' line was needed for FireFox) */
-/*ul, menu, dir {
-	-webkit-padding-start: 0px;
+#SocialImages:after {
+	content: '';
+  display: inline-block;
+  width: 100%;
 }
-
-ul, li, a, i::-moz-focus-inner {
-	padding: 0;
-    border: 0;
-}*/
-
 i[class^="fa"]:before {
 	display: inline-block;
 	text-decoration: none;
 }
-
 .socialIconLI {
 	text-decoration: none;
-	display: inline;
+	display: inline-block;
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
+	margin: 0 auto 0 auto;
 }
-
-.socialIconLI:nth-child(2n) {
-	padding: 0 25px 0 25px;
-}
-
+/*.socialIconLI:nth-child(2n) {
+	padding: 0 10% 0 10%;
+}*/
 .socialIcons {
 	text-decoration: none;
 	display: inline;
@@ -190,7 +211,6 @@ i[class^="fa"]:before {
 	height: 40px;
 	color: #dddddd;
 }
-
 .socialIcons > i{
 	width: 40px;
 	height: 40px;
@@ -198,21 +218,18 @@ i[class^="fa"]:before {
 	display: inline;
 	color: #dddddd;
 }
-
 .socialIcons > i:link {
 	text-decoration: none; /* This and the other a.xxx do not seem to be effectual */
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
 }
-
 .socialIcons > i:visited {
 	text-decoration: none;
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
 }
-
 .socialIcons > i:hover {
 	text-decoration: none;
 	width: 40px;
@@ -256,37 +273,59 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-/* --- Portfolio Page --- */
 
-.work {
-	width: 274px;
-	overflow: auto;
-	position: relative;
-	float: left;
-	margin: 20px 0 25px;
+
+/*/////  Portfolio Page  /////*/
+h1 {
+	border-bottom: 0;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	line-height: 40px;
+	font-weight: 900;
+	background-color: #F8FFFB;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #F8FFFB;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.work:nth-child(even) {
-	margin-right: 40px;
+.work {
+	margin: 0px 0;
 }
 .work img {
 	max-width: 100%;
 	max-height: 100%;
-	border: 0 none;
+	min-height: 225px;
 	opacity: .8;
 }
 .work h3 {
 	border-bottom: 0;
-	background: #4aaaa5;
-	color: #fff;
 	text-align: center;
-	position: absolute;
-	padding: 15px;
-	width: 100%;
+	position: relative;
 	bottom: 20px;
 	line-height: 30px;
-	margin-bottom: 0;
-	font-weight: 300;
+	font-weight: 500;
+	background-color: #F8FFFB;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #F8FFFB;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+.work > img:hover {
+	text-decoration: none;
+	border: solid 3px #F8FFFB;
+}
+
 .auth-image {
 	width: 200px;
 	height: auto;
