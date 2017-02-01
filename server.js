@@ -22,9 +22,9 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-var port = process.env.PORT || 3333;
-app.listen(port, function() {
-  console.log("App running on port "+ port);
+var PORT = process.env.PORT || 3333;
+app.listen(PORT, function() {
+  console.log("App running on port "+ PORT);
 });
 
 
