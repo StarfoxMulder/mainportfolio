@@ -8,8 +8,6 @@ var routes = require("./controllers/controller.js");
 var request = require("request");
 var Promise = require("bluebird");
 
-// mongoose.Promise = Promise;
-
 // Initialize Express
 var app = express();
 
