@@ -83,16 +83,17 @@ li > a {
 
 footer {
 	font-family: 'Poiret One', cursive;
-	font-weight: 600;
+	font-weight: 700;
 	background: #666;
 	color: #ccc;
-	padding: 1% 5%;
+	padding-top: 1%;
 	clear: both;
 	border-top: 2px solid #5A947B;
 	font-size: 14px;
 	text-align: right;
 	position: fixed;
 	bottom: 0px;
+	height: 6%;
 	margin: 2% 0px 0px 0px;
 	width: 100%;
 }
@@ -114,7 +115,39 @@ footer {
 	font-family: 'Archivo Narrow', sans-serif;
 	color: #fff;
 }
-
+#comingSoon h2 {
+/*	border-bottom: 2px solid #eee;*/
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 100%;
+	line-height: 40px;
+	font-weight: 900;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #F8FFFB;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.col-xs-3 {
+	margin-top: 4%;
+	text-align: center;
+}
+.techIcon {
+	color: #F8FFFB;
+	font-size: 56px;
+	text-align: center;
+	vertical-align: middle;
+}
+span.label {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
 
 
 /*/////  HOME PAGE  /////*/
@@ -149,8 +182,8 @@ footer {
 }
 #sidebar h2 {
 /*	border-bottom: 2px solid #eee;*/
-	padding-bottom: 20px;
-	margin-bottom: 15px;
+	/*padding-bottom: 20px;
+	margin-bottom: 15px;*/
 	text-align: center;
 	width: 100%;
 	line-height: 40px;
@@ -172,11 +205,11 @@ footer {
 	text-decoration: none;
 	color: #dddddd;
 	height: auto;
-	text-align: justify;
+	text-align: center;
 }
 #SocialImages:after {
 	content: '';
-  display: inline-block;
+  /*display: inline-block;*/
   width: 100%;
 }
 i[class^="fa"]:before {
@@ -189,14 +222,12 @@ i[class^="fa"]:before {
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
-	margin: 0 auto 0 auto;
 }
-/*.socialIconLI:nth-child(2n) {
-	padding: 0 10% 0 10%;
-}*/
+.socialIconLI:nth-child(2n) {
+	margin: 0 10% 0 10%;
+}
 .socialIcons {
 	text-decoration: none;
-	display: inline;
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
@@ -205,11 +236,10 @@ i[class^="fa"]:before {
 	width: 40px;
 	height: 40px;
 	text-decoration: none;
-	display: inline;
 	color: #dddddd;
 }
 .socialIcons > i:link {
-	text-decoration: none; /* This and the other a.xxx do not seem to be effectual */
+	text-decoration: none;
 	width: 40px;
 	height: 40px;
 	color: #dddddd;
