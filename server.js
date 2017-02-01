@@ -22,8 +22,9 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-var PORT = process.env.PORT || 3333;
+var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   console.log("App running on port "+ PORT);
 });
 
