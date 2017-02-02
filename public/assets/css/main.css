@@ -52,7 +52,6 @@ header {
 	height: 40px;
 	padding: 1%;
 	text-align: justify;
-	bottom: -1;
 }
 #sitePages:after {
 	content: '';
@@ -166,28 +165,23 @@ span.label {
 #technologiesComing {
 	margin-bottom: 5%;
 }
-/*/////  HOME PAGE  /////*/
+
+
+
+
+/*/////  ABOUT ME PAGE  /////*/
 .main-section {
 	background: #F8FFFB;
 	border: 1px solid #ddd;
 	margin-bottom: 4%;
 	padding-bottom: 15px;
+	font-family: 'Archivo Narrow', sans-serif;
 }
 #myPic {
-	float: left;
-	margin-right: 2%;
-	margin-bottom: 2%;
-	width: 40%;
-	height: 40%;
+	border-radius: 100%;
+	max-width: 250px;
 }
-#beeMovie {
-	font-style: italic;
-}
-#beeMovieT {
-	font-style: italic;
-	float: right;
-	margin-bottom: 15px;
-}
+#myPicRow
 
 
 
@@ -318,7 +312,7 @@ h2 {
 	font-family: 'Archivo Narrow', sans-serif;
 	color: #F8FFFB;
 	font-size: 26px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	text-decoration: none;
 	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
 	background-repeat: repeat-x, repeat;
