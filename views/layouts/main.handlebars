@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="techicons/dist/icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One|Teko" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <script src="https://use.fontawesome.com/a61d82420f.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="assets/javascript/main.js"></script>
   </head>
   <header>
@@ -24,7 +25,7 @@
           <ul id="sitePages">
             <li><a href="/about" id="navBarAbout">About</a></li>
             <li><a href="/portfolio" id="navBarPortfolio">Portfolio</a></li>
-            <li><a href="/contact" id="navBarContact">Contact</a></li>
+            <li><a id="navBarContact" type="button" data-toggle="modal" data-target="#contactModal">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -33,6 +34,25 @@
 
   <body>
     {{{ body }}}
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="contactModalLabel">Send me an email!</h4>
+          </div>
+          <div class="modal-body">
+            blah blah bleep bloop
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 
   <footer>
