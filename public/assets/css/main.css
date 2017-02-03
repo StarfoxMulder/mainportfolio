@@ -179,11 +179,21 @@ span.label {
 }
 #myPic {
 	border-radius: 100%;
-	max-width: 250px;
+	max-width: 230px;
+	vertical-align: middle;
+	text-align: center;
 }
-#myPicRow
-
-
+#myPicRow {
+	height: 200px;
+	overflow: visible;
+	vertical-align: middle;
+	text-align: center;
+}
+#connect {
+}
+.myPicBuffer {
+	height: 220px;
+}
 
 /*/////  sidebar  /////*/
 #sidebar {
