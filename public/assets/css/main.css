@@ -179,6 +179,11 @@ span.label {
 	padding-left: 20px;
 	font-family: 'Archivo Narrow', sans-serif;
 }
+#topBio .col-xs-3 {
+	overflow: visible;
+	margin-bottom: -5em;
+	margin-top: 0;
+}
 #myPic {
 	border-radius: 100%;
 	max-width: 230px;
@@ -355,6 +360,7 @@ h2 {
 	max-height: 175px;
 	opacity: .8;
 	border: solid 2px white;
+	border-radius: 10%;
 }
 .work h3 {
 	border-bottom: 0;
@@ -376,7 +382,7 @@ h2 {
 }
 .work img:hover {
 	text-decoration: none;
-	border: solid 2px #456145;
+	border: solid 2px #4aaaa5;
 }
 
 .auth-image {
