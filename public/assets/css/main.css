@@ -127,7 +127,7 @@ footer {
 	font-weight: 900;
 	font-family: 'Archivo Narrow', sans-serif;
 	color: #F8FFFB;
-	font-size: 26px;
+	font-size: 30px;
 	letter-spacing: 2px;
 	text-decoration: none;
 	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
@@ -141,19 +141,19 @@ div.col-xs-3 {
 }
 .techIcon {
 	color: #F8FFFB;
-	font-size: 56px;
+	font-size: 65px;
 	text-align: center;
 	vertical-align: middle;
 }
 .techIcon2 {
 	color: #F8FFFB;
-	font-size: 56px;
+	font-size: 65px;
 	text-align: center;
 	vertical-align: middle;
 }
 span.label {
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: 'Archivo Narrow', sans-serif;
 }
 #comingSoon {
@@ -297,44 +297,20 @@ i[class^="fa"]:before {
 }
 
 
-/* --- Contact Page --- */
 
-#contact-form ul {
-	margin-bottom: 20px;
+
+/*///// CONTACT MODAL /////*/
+
+
+#sendEmail {
+	background-color: #4aaaa5;
 }
-#contact-form li {
-	margin-bottom: 10px;
-}
-label,
-input[type=text],
-input[type=email],
-textarea {
-	display: block;
-	width: 100%;
-}
-input[type=text],
-input[type=email],
-textarea {
-	height: 35px;
-	border: 1px solid #ddd;
-	padding: 0 10px;
-	font-size: 14px;
-}
-textarea {
-	height: 200px;
-}
-input[type=submit] {
-	background: #4aaaa5;
-	border: 0 none;
-	color: #fff;
-	font-size: 18px;
-	padding: 10px 30px;
-	cursor: pointer;
+#sendEmail:click {
+	background-color: #dddddd;
 }
 
 
-
-/*/////  Portfolio Page  /////*/
+/*/////  PORTFOLIO PAGE  /////*/
 h2 {
 	text-align: center;
 	width: 100%;
@@ -470,3 +446,38 @@ h2 {
 	}
 }
 */
+
+/*
+///// Previous Contact Page CSS /////
+#contact-form ul {
+	margin-bottom: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}*/

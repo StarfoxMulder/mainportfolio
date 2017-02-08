@@ -4,7 +4,7 @@
     <title>Charles Jude Prestia</title>
     <link rel="icon" type="image/png" href="/assets/images/alien.png">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="techicons/dist/icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
@@ -43,11 +43,24 @@
             <h4 class="modal-title" id="contactModalLabel">Send me an email!</h4>
           </div>
           <div class="modal-body">
-            blah blah bleep bloop
+            <form>
+              <div class="form-group">
+                <label for="sender-name" class="control-label">Your Email:</label>
+                <input type="text" class="form-control" id="sender-name">
+              </div>
+              {{!-- <div class="form-group">
+                <label for="subject-name" class="control-label">Subject:</label>
+                <input type="text" class="form-control" id="subject-name">
+              </div> --}}
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button id="sendEmail" type="button" class="btn btn-primary">Send!</button>
           </div>
         </div>
       </div>
@@ -61,6 +74,9 @@
         &copy; Copyright 2017 Charles Jude Prestia
         <a id="goinToSpace" href="https://starfoxmulder.github.io/imgoin/intospace.html" class="socialIcons">
           <i class="fa fa-paypal fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.patreon.com/user?u=5036943" class="socialIcons">
+          <i src="assets/images/p2.png"></i>
         </a>
       </div>
     </div>
