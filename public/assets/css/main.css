@@ -361,13 +361,59 @@ h2 {
 	border: solid 2px #4aaaa5;
 }
 
-.auth-image {
+#infoCont {
+	margin-top: 0px;
+}
+#projectTitle {
+	text-align: center;
+	bottom: 5px;
+	line-height: 30px;
+	font-weight: 600;
+	text-align: center;
+	height: 7vh;
+	background-color: #F8FFFB;
+	font-size: 26px;
+	margin-bottom: 1vh;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+#projectTitle > h3 {
+	vertical-align: middle;
+/*	position: relative;*/
+	bottom: 1px;
+	line-height: 30px;
+	font-weight: 600;
+	background-color: #F8FFFB;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #F8FFFB;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+	  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#projectInfo {
+	padding: 1vh 1vw;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #3A403B;
+	font-size: 18px;
+	min-height: 35vh;
+	height: auto;
+	margin-top: 0;
+	background-color: #F8FFFB;
+}
+
+
+
+/*.auth-image {
 	width: 200px;
 	height: auto;
 	margin-top: 10px;
 	float: left;
 	margin-right: 25px;
-}
+}*/
 
 /*---Media Queries--*/
 /*
