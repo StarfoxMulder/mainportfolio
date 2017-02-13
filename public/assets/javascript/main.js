@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('a').hover(function() {
+    $('a.project').hover(function() {
         $("#projectTitle").text("");
         $("#projectInfo").text("");
         var title = $(this).attr('data-title');
