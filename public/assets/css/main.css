@@ -363,9 +363,11 @@ h2 {
 
 #infoCont {
 	margin-top: 0px;
+	background-color: #F8FFFB;
+	border: 1px solid #ddd;
 }
 #projectTitle {
-	margin-top: 0px;
+	margin-top: 2vh;
 	margin-bottom: 0px;
 	text-align: center;
 	vertical-align: middle;
@@ -381,7 +383,7 @@ h2 {
 #projectTitle > h3 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	vertical-align: middle;
+/*	vertical-align: middle;*/
 /*	position: relative;*/
 /*	bottom: 1px;*/
 /*	line-height: 30px;*/
@@ -398,7 +400,7 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 #projectInfo {
-	padding: 1vh 1vw;
+	padding: 0 1vw 1vw 1vw;
 	font-family: 'Archivo Narrow', sans-serif;
 	color: #3A403B;
 	font-size: 18px;
@@ -406,7 +408,7 @@ h2 {
 	height: auto;
 	margin-top: 0;
 	background-color: #F8FFFB;
-	border-radius: 3%;
+	border-radius: 10%;
 }
 
 
