@@ -378,7 +378,7 @@ h2 {
 	margin-bottom: 1vh;
 	letter-spacing: 2px;
 	text-decoration: none;
-	border-radius: 25%;
+	border-radius: 5%;
 }
 #projectTitle > h3 {
 	margin-top: 0px;
@@ -408,7 +408,7 @@ h2 {
 	height: auto;
 	margin-top: 0;
 	background-color: #F8FFFB;
-	border-radius: 20%;
+	border-radius: 5%;
 }
 
 
