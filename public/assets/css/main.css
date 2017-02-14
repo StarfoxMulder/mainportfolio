@@ -183,6 +183,10 @@ span.label {
 	overflow: visible;
 	margin-bottom: -7em;
 	margin-top: 0;
+	text-align: left;
+}
+#work h3 {
+	text-align: center;
 }
 #mentalM {
 	text-align: center;
@@ -200,6 +204,7 @@ span.label {
 	text-align: center;
 }
 #myPicRow {
+	margin-top: -7em;
 	height: 100px;
 	overflow: visible;
 	vertical-align: middle;
