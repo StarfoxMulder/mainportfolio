@@ -184,6 +184,9 @@ span.label {
 	margin-bottom: -5em;
 	margin-top: 0;
 }
+#mentalM {
+	text-align: center;
+}
 #myPic {
 	border-radius: 100%;
 	max-width: 230px;
@@ -239,6 +242,7 @@ span.label {
 }
 #connect {
 	height: auto;
+	margin-top: 1vw;
 }
 #SocialImages {
 	text-decoration: none;
