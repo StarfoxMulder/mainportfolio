@@ -181,11 +181,17 @@ span.label {
 }
 #topBio .col-xs-3 {
 	overflow: visible;
-	margin-bottom: -5em;
+	margin-bottom: -7em;
 	margin-top: 0;
 }
 #mentalM {
 	text-align: center;
+}
+#genWV h3 {
+	text-align: center;
+}
+#genWV p {
+	text-align: left;
 }
 #myPic {
 	border-radius: 100%;
