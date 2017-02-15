@@ -237,6 +237,7 @@ span.label {
 	border: 1px solid #ddd;
 }
 #sidebar h2 {
+	margin-top: 0;
 	text-align: center;
 	width: 100%;
 	line-height: 40px;
