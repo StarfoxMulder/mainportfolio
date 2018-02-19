@@ -5,11 +5,11 @@ var path = require('path');
 
 ///// Route to Landing Page \\\\\
 router.get('/', function (req, res) {
-   res.render('about');
+   res.render('index');
 });
 
-router.get('/tech', function (req, res) {
-  res.render('index');
+router.get('/about', function (req, res) {
+  res.render('about');
 });
 
 router.get('/portfolio', function (req, res) {
