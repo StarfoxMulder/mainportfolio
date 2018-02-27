@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var portfolioCookie = getCookie('CJPcookie');
 
     $('a.project').hover(function() {
         $("#projectTitle").text("");
@@ -8,6 +9,24 @@ $(document).ready(function () {
         $('#projectTitle').html("<h3>"+title+"</h3>");
         $('#projectInfo').text(body);
     });
+
+    if(portfolioCookie != 'DoNotShow'){
+        var popupHtml = '<div id="myModal" class="modal"> <div class="modal-content"> <div class="modal-close"> <img id="closeIcon" src="/assets/images/closeIcon.png" /> </div> <div class="modal-body"> <h3>Hi! Thanks for your interest in my work!</h3> <p>I am in the process of building a new portfolio.</p> <p>The current design and content of this site does not accurately reflect how incredible I am.</p> <p>Please keep this in mind during your visit.</p> <h3>- Charles Jude Prestia</h3> </div> <div class="modal-footer"> <button id="DoNotShowAgain">Got it! No need to show me this message again.</button> </div> </div></div>';
+        $('body').append(popupHtml);
+    }
+
+    $('#DoNotShowAgain').click(function(){
+        document.cookie = "CJPcookie=DoNotShow";
+        $('#myModal').css('display', 'none');
+    });
+    $('#closeIcon').click(function() {
+        $('#myModal').css('display', 'none');
+    });
+
+    function getCookie(cookiename){
+        var cookiestring=RegExp(""+cookiename+"[^;]+").exec(document.cookie);
+        return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
+    }
 
 
     // const nodemailer = require('nodemailer');
